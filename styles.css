@@ -11,6 +11,7 @@
   --color-muted: #596579;
   --color-accent: #5b4bdb;
   --color-accent-hover: #4435b8;
+  --color-on-accent: #ffffff;
   --color-border: #dce1ec;
   --color-highlight: #eeecff;
   --color-focus: #d45b21;
@@ -23,6 +24,47 @@
   --space-4: 2rem;
   --space-5: 3rem;
   --content-width: 70rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-page: #0b1120;
+    --color-surface: #141e30;
+    --color-text: #e2e8f0;
+    --color-muted: #a8b3c6;
+    --color-accent: #b4a8ff;
+    --color-accent-hover: #cbc2ff;
+    --color-on-accent: #17132f;
+    --color-border: #2b3850;
+    --color-highlight: #282243;
+    --color-focus: #ffb38a;
+  }
+}
+
+:root[data-theme="light"] {
+  --color-page: #f7f8fc;
+  --color-surface: #ffffff;
+  --color-text: #172033;
+  --color-muted: #596579;
+  --color-accent: #5b4bdb;
+  --color-accent-hover: #4435b8;
+  --color-on-accent: #ffffff;
+  --color-border: #dce1ec;
+  --color-highlight: #eeecff;
+  --color-focus: #d45b21;
+}
+
+:root[data-theme="dark"] {
+  --color-page: #0b1120;
+  --color-surface: #141e30;
+  --color-text: #e2e8f0;
+  --color-muted: #a8b3c6;
+  --color-accent: #b4a8ff;
+  --color-accent-hover: #cbc2ff;
+  --color-on-accent: #17132f;
+  --color-border: #2b3850;
+  --color-highlight: #282243;
+  --color-focus: #ffb38a;
 }
 
 body {
@@ -71,14 +113,14 @@ header > a {
   height: 2.75rem;
   border-radius: 50%;
   background: var(--color-accent);
-  color: #fff;
+  color: var(--color-on-accent);
   font-weight: 800;
   text-decoration: none;
 }
 
 header > a:hover {
   background: var(--color-accent-hover);
-  color: #fff;
+  color: var(--color-on-accent);
 }
 
 nav ul,
@@ -160,7 +202,7 @@ button {
   border: 1px solid var(--color-accent);
   border-radius: var(--radius-pill);
   background: var(--color-accent);
-  color: #fff;
+  color: var(--color-on-accent);
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
@@ -170,7 +212,7 @@ button {
 .button-link:hover,
 button:hover {
   background: var(--color-accent-hover);
-  color: #fff;
+  color: var(--color-on-accent);
 }
 
 .button-link-secondary {
