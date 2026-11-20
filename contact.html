@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Muhammad Hassan about software, web, mobile, and AI projects.">
+    <title>Muhammad Hassan | Contact</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" aria-label="Muhammad Hassan home">MH</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="contact-heading">
+        <p>Let's start a conversation</p>
+        <h1 id="contact-heading">Get in touch</h1>
+        <p>Have a question, an idea, or an opportunity to discuss? Send me a message.</p>
+
+        <form id="contact-form">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="3">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" selected disabled>Choose a subject</option>
+              <option value="project">Project discussion</option>
+              <option value="opportunity">Opportunity</option>
+              <option value="question">A question</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>How did you hear about me?</legend>
+            <div>
+              <input id="source-search" name="source" type="radio" value="search" required>
+              <label for="source-search">Search engine</label>
+            </div>
+            <div>
+              <input id="source-social" name="source" type="radio" value="social">
+              <label for="source-social">Social media</label>
+            </div>
+            <div>
+              <input id="source-referral" name="source" type="radio" value="referral">
+              <label for="source-referral">A referral</label>
+            </div>
+            <div>
+              <input id="source-other" name="source" type="radio" value="other">
+              <label for="source-other">Other</label>
+            </div>
+          </fieldset>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required minlength="20"></textarea>
+          </div>
+          <div>
+            <input id="consent" name="consent" type="checkbox" required>
+            <label for="consent">I agree to be contacted about this message.</label>
+          </div>
+          <button type="submit">Send message</button>
+          <p id="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Muhammad Hassan</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Browse projects by Muhammad Hassan, a computer science student exploring software development, AI, and machine learning.">
+    <title>Muhammad Hassan | Projects</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" aria-label="Muhammad Hassan home">MH</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="projects-heading">
+        <p>Ideas made tangible</p>
+        <h1 id="projects-heading">Projects</h1>
+        <p>A selection of things I've built while learning and exploring new technologies.</p>
+        <div id="project-controls">
+          <label for="project-search">Search projects</label>
+          <input id="project-search" name="search" type="search" placeholder="Try a title or technology">
+          <label for="technology-filter">Filter by technology</label>
+          <select id="technology-filter" name="technology">
+            <option value="all">All technologies</option>
+          </select>
+        </div>
+        <p id="project-result-count" aria-live="polite"></p>
+        <div id="project-grid" aria-label="Project list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Muhammad Hassan</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
