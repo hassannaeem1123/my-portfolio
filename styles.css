@@ -231,6 +231,21 @@ textarea {
   margin-bottom: 0;
 }
 
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  padding: 0;
+  list-style: none;
+}
+
+.project-tech li {
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-highlight);
+  color: var(--color-accent);
+}
+
 #contact-form {
   display: grid;
   gap: var(--space-2);
