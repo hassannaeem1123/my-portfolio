@@ -11,7 +11,6 @@ const startingTheme = savedTheme === "dark" || savedTheme === "light"
 function setTheme(theme, shouldSave) {
   pageRoot.dataset.theme = theme;
   themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
-  themeToggle.textContent = theme === "dark" ? "Dark mode: on" : "Dark mode: off";
 
   if (shouldSave) {
     localStorage.setItem("portfolio-theme", theme);

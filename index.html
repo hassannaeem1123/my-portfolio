@@ -18,34 +18,43 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">Dark mode: off</button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false"><img class="theme-icon theme-icon-sun" src="assets/icons/sun.svg" alt="" width="24" height="24"><img class="theme-icon theme-icon-moon" src="assets/icons/moon.svg" alt="" width="24" height="24"></button>
     </header>
 
     <main>
-      <section aria-labelledby="intro-heading">
-        <p>Curious mind. Thoughtful code.</p>
-        <h1 id="intro-heading">Hi, I'm Muhammad Hassan.</h1>
-        <p>Computer Science Student &amp; Aspiring Frontend Developer</p>
-        <p>I'm a computer science student exploring how thoughtful software can solve real problems. I enjoy learning across web, mobile, and AI, and turning new ideas into practical projects.</p>
-        <a class="button-link" href="projects.html">Explore my projects</a>
-        <a class="button-link button-link-secondary" href="contact.html">Get in touch</a>
+      <section class="home-hero" aria-labelledby="intro-heading">
+        <div class="hero-copy">
+          <p class="hero-kicker">Curious mind. Thoughtful code.</p>
+          <h1 id="intro-heading">Hi, I'm<br>Muhammad Hassan.</h1>
+          <p class="hero-role">Computer Science Student &amp; Aspiring Frontend Developer</p>
+          <p class="hero-description">I build practical projects across web, mobile, and machine learning, and enjoy turning new ideas into useful experiences.</p>
+          <div class="hero-actions">
+            <a class="button-link" href="projects.html">Explore my projects</a>
+            <a class="button-link button-link-secondary" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <div class="profile-frame">
+          <img class="profile-photo" src="assets/images/hassan.JPG" alt="Muhammad Hassan, computer science student" width="3024" height="4032">
+        </div>
       </section>
 
-      <section aria-labelledby="about-heading">
-        <h2 id="about-heading">A little about me</h2>
-        <p>I like understanding how things work, then building something useful with what I learn. From responsive web experiences to mobile apps and machine learning, I'm growing my skills one project at a time.</p>
+      <section class="about-section" aria-labelledby="about-heading">
+        <p class="section-kicker">Behind the code</p>
+        <h2 id="about-heading">I learn by building.</h2>
+        <p>My projects range from a database-connected Islamic bookstore and C++ console applications to Flutter apps and a Python prediction model trained on a dataset I collected.</p>
       </section>
 
-      <section aria-labelledby="skills-heading">
-        <h2 id="skills-heading">What I work with</h2>
-        <ul>
-          <li>AI and Machine Learning</li>
-          <li>React</li>
-          <li>Flutter</li>
-          <li>Node.js</li>
-          <li>Python</li>
-          <li>C++</li>
-          <li>TypeScript</li>
+      <section class="skills-section" aria-labelledby="skills-heading">
+        <p class="section-kicker">Tools I use</p>
+        <h2 id="skills-heading">My toolkit</h2>
+        <ul class="skill-grid">
+          <li><img src="assets/technologies/ai-ml.svg" alt="AI and machine learning icon" width="48" height="48"><span>AI &amp; Machine Learning</span></li>
+          <li><img src="assets/technologies/react.svg" alt="React icon" width="48" height="48"><span>React</span></li>
+          <li><img src="assets/technologies/flutter.svg" alt="Flutter icon" width="48" height="48"><span>Flutter</span></li>
+          <li><img src="assets/technologies/node.svg" alt="Node.js icon" width="48" height="48"><span>Node.js</span></li>
+          <li><img src="assets/technologies/python.svg" alt="Python icon" width="48" height="48"><span>Python</span></li>
+          <li><img src="assets/technologies/cpp.svg" alt="C++ icon" width="48" height="48"><span>C++</span></li>
+          <li><img src="assets/technologies/typescript.svg" alt="TypeScript icon" width="48" height="48"><span>TypeScript</span></li>
         </ul>
       </section>
     </main>
