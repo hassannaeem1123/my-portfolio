@@ -27,52 +27,58 @@
         <h1 id="contact-heading">Get in touch</h1>
         <p>Have a question, an idea, or an opportunity to discuss? Send me a message.</p>
 
-        <form id="contact-form">
+        <form id="contact-form" novalidate>
           <div>
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required minlength="3">
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="3" aria-describedby="name-error" aria-invalid="false">
+            <p class="field-error" id="name-error" aria-live="polite" hidden></p>
           </div>
           <div>
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error" aria-invalid="false">
+            <p class="field-error" id="email-error" aria-live="polite" hidden></p>
           </div>
           <div>
             <label for="subject">Subject</label>
-            <select id="subject" name="subject" required>
+            <select id="subject" name="subject" required aria-describedby="subject-error" aria-invalid="false">
               <option value="" selected disabled>Choose a subject</option>
               <option value="project">Project discussion</option>
               <option value="opportunity">Opportunity</option>
               <option value="question">A question</option>
               <option value="other">Other</option>
             </select>
+            <p class="field-error" id="subject-error" aria-live="polite" hidden></p>
           </div>
-          <fieldset>
+          <fieldset aria-describedby="source-error">
             <legend>How did you hear about me?</legend>
             <div>
-              <input id="source-search" name="source" type="radio" value="search" required>
+              <input id="source-search" name="source" type="radio" value="search" required aria-invalid="false">
               <label for="source-search">Search engine</label>
             </div>
             <div>
-              <input id="source-social" name="source" type="radio" value="social">
+              <input id="source-social" name="source" type="radio" value="social" aria-invalid="false">
               <label for="source-social">Social media</label>
             </div>
             <div>
-              <input id="source-referral" name="source" type="radio" value="referral">
+              <input id="source-referral" name="source" type="radio" value="referral" aria-invalid="false">
               <label for="source-referral">A referral</label>
             </div>
             <div>
-              <input id="source-other" name="source" type="radio" value="other">
+              <input id="source-other" name="source" type="radio" value="other" aria-invalid="false">
               <label for="source-other">Other</label>
             </div>
+            <p class="field-error" id="source-error" aria-live="polite" hidden></p>
           </fieldset>
           <div>
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required minlength="20"></textarea>
+            <textarea id="message" name="message" rows="6" required minlength="20" aria-describedby="message-error" aria-invalid="false"></textarea>
+            <p class="field-error" id="message-error" aria-live="polite" hidden></p>
           </div>
           <div class="consent-row">
-            <input id="consent" name="consent" type="checkbox" required>
+            <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error" aria-invalid="false">
             <label for="consent">I agree to be contacted about this message.</label>
           </div>
+          <p class="field-error" id="consent-error" aria-live="polite" hidden></p>
           <button type="submit">Send message</button>
           <p id="form-status" aria-live="polite"></p>
         </form>
@@ -88,5 +94,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="contact.js" defer></script>
   </body>
 </html>

@@ -15,6 +15,7 @@
   --color-border: #dce1ec;
   --color-highlight: #eeecff;
   --color-focus: #d45b21;
+  --color-error: #b42318;
   --radius-small: 0.5rem;
   --radius-card: 1rem;
   --radius-pill: 999px;
@@ -38,6 +39,7 @@
     --color-border: #2b3850;
     --color-highlight: #282243;
     --color-focus: #ffb38a;
+    --color-error: #ff958c;
   }
 }
 
@@ -52,6 +54,7 @@
   --color-border: #dce1ec;
   --color-highlight: #eeecff;
   --color-focus: #d45b21;
+  --color-error: #b42318;
 }
 
 :root[data-theme="dark"] {
@@ -65,6 +68,7 @@
   --color-border: #2b3850;
   --color-highlight: #282243;
   --color-focus: #ffb38a;
+  --color-error: #ff958c;
 }
 
 body {
@@ -339,7 +343,15 @@ textarea {
   margin: 0;
 }
 
-#contact-form button {
+.field-error {
+  margin-bottom: 0;
+  color: var(--color-error);
+  font-size: 0.9rem;
+}
+
+#form-status {
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 footer {
