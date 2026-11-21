@@ -98,7 +98,7 @@ function createProjectCard(project) {
   if (project.link) {
     const link = document.createElement("a");
     link.href = project.link;
-    link.textContent = "Portfolio home";
+    link.textContent = "View Project";
     article.append(link);
   }
 

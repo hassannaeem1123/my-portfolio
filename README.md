@@ -24,4 +24,4 @@ Open `index.html` in a browser. Use the navigation links to view the Projects an
 
 ## Live website
 
-GitHub Pages deployment is not active yet. The live URL will be added here after the site is published.
+Live demo: [https://hassannaeem1123.github.io/my-portfolio/](https://hassannaeem1123.github.io/my-portfolio/)
